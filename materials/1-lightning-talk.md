@@ -66,15 +66,48 @@ Anzahl Bäume: <script input="range" value="1" default="1" min="1" max="10000" o
 
 Autofahrt: <script input="number" value="400" default="400 "min="1" max="1000" output="Autofahrt">@input</script> $\text{km}$
 
+Ein durchschnittlicher
+<script
+  input="select"
+  output="Autotyp"
+  value="EU Neuwagen (2023)"
+  options="EU Neuwagen (2023)|Kompakt-SUV (VW Tiguan)|Mittelklasse-SUV (BMW X3)|Großer SUV (BMW X5)|E-Auto (EU-Strommix)|E-Auto (Ökostrom)"
+>
+"@input"
+</script>
+verbraucht im Durchschnitt
+<script output="Verbrauch">
+switch ("@input(`Autotyp`)") {
+  case "EU Neuwagen (2023)":        118; break
+  case "Kompakt-SUV (VW Tiguan)":   160; break
+  case "Mittelklasse-SUV (BMW X3)": 185; break
+  case "Großer SUV (BMW X5)":       225; break
+  case "E-Auto (EU-Strommix)":       70; break
+  case "E-Auto (Ökostrom)":           5; break
+  default:                          118
+}
+</script>
+$\text{g}/\text{km}$
+
+
+
+
+
 <script style="display: inline-block; width: 100%">
 let trees    = @input(`Bäume`)
 let km       = @input(`Autofahrt`)
+let g_per_km = @input(`Verbrauch`)  // g CO2/km — kommt vom Select oben
 
 // Wie viel CO2 bindet ein Baum pro Jahr?
-let co2_per_tree = 22  // kg — Doppelklick um den Wert zu prüfen!
+// Baumtyp / Kontext	                            CO₂/Jahr
+// Junger Baum (1–10 Jahre)	                          1–5 kg
+// Durchschnittlicher Laubbaum (mitteleuropäisch)	10–25 kg
+// Schnellwüchsiger Baum (Pappel, Eukalyptus)	    20–40 kg
+// Oft zitierter "Durchschnitt" in Klimakampagnen	   22 kg (häufig unkritisch übernommen)
+// Konservativer wissenschaftlicher Schätzwert	    10–12 kg
+let co2_per_tree = 5
 
-// Durchschnittlicher PKW: ~120 g CO2 pro km
-let co2_per_trip = km * 0.12  // kg CO2 pro Fahrt
+let co2_per_trip = km * g_per_km / 1000  // kg CO2 pro Fahrt
 
 let o2_per_tree = Math.round(co2_per_tree * 32 / 44)
 let co2_total   = trees * co2_per_tree
