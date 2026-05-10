@@ -62,35 +62,29 @@ In LiaScript ist das Wirklichkeit. Heute. Für alle. Open Source. Und die Präse
     --{{0}}--
 Schaut her — ein reaktives Dokument. Ändert die Anzahl der Bäume. Alles passt sich an.
 
-Anzahl Bäume: <script input="range" value="1" default="1" min="1" max="10000" output="Bäume">@input</script>
-
-Autofahrt: <script input="number" value="400" default="400 "min="1" max="1000" output="Autofahrt">@input</script> $\text{km}$
-
-Ein durchschnittlicher
+Eine Stadt beschließt,
+<script input="range" value="10" min="1" max="10000" step="10" output="Bäume">@input</script>
+Bäume zu pflanzen, um ihren CO₂-Fußabdruck zu kompensieren. Eine durchschnittliche Autfahrt in Deutschland beträgt ca.
+<script input="number" value="400" min="1" max="1000" output="Autofahrt">@input</script> km.
+Geht man von einem
 <script
   input="select"
   output="Autotyp"
-  value="EU Neuwagen (2023)"
-  options="EU Neuwagen (2023)|Kompakt-SUV (VW Tiguan)|Mittelklasse-SUV (BMW X3)|Großer SUV (BMW X5)|E-Auto (EU-Strommix)|E-Auto (Ökostrom)"
->
-"@input"
-</script>
-verbraucht im Durchschnitt
+  value="SUV (BMW X5)"
+  options="EU Neuwagen (2023)|Kompakt-SUV (VW Tiguan)|Mittelklasse-SUV (BMW X3)|SUV (BMW X5)|E-Auto (EU-Strommix)|E-Auto (Ökostrom)"
+>"@input"</script>
+so beträgt der durchschnittliche Verbrauch
 <script output="Verbrauch">
 switch ("@input(`Autotyp`)") {
-  case "EU Neuwagen (2023)":        118; break
-  case "Kompakt-SUV (VW Tiguan)":   160; break
-  case "Mittelklasse-SUV (BMW X3)": 185; break
-  case "Großer SUV (BMW X5)":       225; break
-  case "E-Auto (EU-Strommix)":       70; break
-  case "E-Auto (Ökostrom)":           5; break
-  default:                          118
+  case "EU Neuwagen (2023)":          118; break
+  case "Kompakt-SUV (VW Tiguan)":     160; break
+  case "Mittelklasse-SUV (BMW X3)":   185; break
+  case "SUV (BMW X5)":         225; break
+  case "E-Auto (EU-Strommix)":         70; break
+  case "E-Auto (Ökostrom)":             5; break
+  default:                            118
 }
-</script>
-$\text{g}/\text{km}$
-
-
-
+</script> g/km. __Reicht das — oder ist Bäume pflanzen nur ein grünes Gewissen?__
 
 
 <script style="display: inline-block; width: 100%">
