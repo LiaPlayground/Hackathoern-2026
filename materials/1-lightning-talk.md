@@ -64,16 +64,16 @@ Schaut her — ein reaktives Dokument. Ändert die Anzahl der Bäume. Alles pass
 
 Eine Stadt beschließt,
 <script input="range" value="10" min="1" max="10000" step="10" output="Bäume">@input</script>
-Bäume zu pflanzen, um ihren CO₂-Fußabdruck zu kompensieren. Eine durchschnittliche Autfahrt in Deutschland beträgt ca.
+Bäume zu pflanzen, um ihren CO₂-Fußabdruck zu kompensieren. Eine durchschnittliche Autofahrt in Deutschland beträgt ca.
 <script input="number" value="400" min="1" max="1000" output="Autofahrt">@input</script> km.
-Geht man von einem
+Geht man von einem durchschnittlichen
 <script
   input="select"
   output="Autotyp"
   value="SUV (BMW X5)"
   options="EU Neuwagen (2023)|Kompakt-SUV (VW Tiguan)|Mittelklasse-SUV (BMW X3)|SUV (BMW X5)|E-Auto (EU-Strommix)|E-Auto (Ökostrom)"
 >"@input"</script>
-so beträgt der durchschnittliche Verbrauch
+so beträgt der Verbrauch in etwa
 <script output="Verbrauch">
 switch ("@input(`Autotyp`)") {
   case "EU Neuwagen (2023)":          118; break
@@ -146,17 +146,7 @@ let option = {
 </script>
 
     --{{1}}--
-Sieht gut aus, oder? Großartig. Ich habe da ein besonders positives Beispiel ausgesucht. Aber jetzt: Doppelklick auf das Script-Feld.
-
-      {{1}}
-> ⚠️ **Doppelklick auf das Script-Feld oben.**
->
-> Schaut Zeile 2 an: `co2_per_tree = 22`
->
-> Realistische Studien geben **10–12 kg** an.
-> Ich habe **22** eingetragen — doppelt so optimistisch.
->
-> Ändert den Wert auf **11**. Schaut, was passiert.
+Sieht gut aus, oder? Großartig. Ich habe da ein besonders pessimistisches Beispiel ausgesucht. Aber jetzt: Doppelklick auf das Diagramm und schaut euch den Wert in Zeile 12 an.
 
 ## Nullius in Verba
 
@@ -165,7 +155,7 @@ Sieht gut aus, oder? Großartig. Ich habe da ein besonders positives Beispiel au
 
 > *Nullius in verba.*
 >
-> — Royal Society, London, 1660
+> -- Royal Society, London, 1660
 
     --{{1}}--
 LiaScript macht das möglich: Jede Annahme, jeder Algorithmus — direkt im Dokument. Kein Build-Prozess. Keine versteckte Toolchain. Doppelklick. Fertig.
