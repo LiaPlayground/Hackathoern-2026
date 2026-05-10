@@ -1,34 +1,88 @@
 <!--
-author:   André Dietrich
-version:  0.1.0
-language: de
-narrator: Deutsch Male
-comment:  Nullius in Verba — Ein 5-Minuten-Lightning-Talk über reaktive OER und epistemische Transparenz mit LiaScript.
+author:    André Dietrich
+version:   0.1.0
+language:  de
+narrator:  Deutsch Male
+edit:      true
+comment:   Nullius in Verba — Ein 5-Minuten-Lightning-Talk über reaktive OER
+           und epistemische Transparenz mit LiaScript.
+import:    https://raw.githubusercontent.com/liaTemplates/MicroBit-Simulator/main/README.md
+           https://raw.githubusercontent.com/LiaTemplates/Wikimedia/0.0.2/README.md
 -->
 
 # Nullius in Verba — Traue nicht dem Autoren
+
+      {{1-2}}
+@Wikimedia.embed(https://commons.wikimedia.org/wiki/File:Question_Everything.jpg)
+
+       {{2}}
+> ___„Nullius in verba"___ — Nimm niemandes Wort dafür.
+>
+> -- Royal Society, London, 1660
 
 ## Seit der Steinzeit …
 
     --{{0}}--
 Dokumente sind so alt wie die Menschheit. Und sie sehen seit Jahrtausenden gleich aus.
 
-| Epoche | Medium |
-|--------|--------|
-| Steinzeit | Höhlenmalerei |
-| Mesopotamien | Tontafel |
-| Ägypten | Papyrus |
-| Mittelalter | Pergament |
-| Neuzeit | Papier |
-| 21. Jahrhundert | **PDF** |
+![Die Formel für den Kreisinhalt (A = π · r²) auf sechs historischen Schriftträgern: Stein, Tontafel, Papyrus, Pergament, Papier und PDF — immer dieselbe Formel, immer statisch.](../assets/img/history.jpg)
 
     --{{1}}--
-Gleicher Inhalt. Gleiche Form. Überall. Immer. Du siehst es — aber du kannst es nicht anfassen.
+Gleicher Inhalt. Gleiche Form. Überall. Immer. Du siehst es — aber du kannst es nicht fassen.
 
       {{1}}
 > **Ein Dokument schaut dich an.**
 > Du kannst es nicht hinterfragen. Du kannst es nicht verändern.
 > Es weiß immer mehr als du.
+
+## Interaktivität
+
+     --{{0}}--
+Mithilfe von Computer oder sogar mit "einfachen" Browsern können wir Lernende doch endlich zum echten Verstehen und Experimentieren einladen — oder?
+
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXh0Mmdsc3pobHFscnAxcnE0dHAwMzJsZmZoeDZlODVkdjFlaGdmdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DBW3BniaWrFo4/giphy.gif)<!-- style="width: 100%"-->
+
+### Interaktivität == Quiz
+
+    --{{0}}--
+Digitale Lehrmaterialien sind oft genau das: statischer Text, PDFs — durch die sich der Lernende quält — und am Ende wartet ein Quiz. Das nennen wir dann interaktiv.
+
+__Für was steht das Kürzel OER?__
+
+- [( )] Online Experience Renderer
+- [( )] Openly Editable Repository
+- [(X)] Open Educational Resources
+- [( )] Optimized E-Reading System
+
+    --{{1}}--
+Richtig angeklickt — aber verstanden? Der Inhalt ist gleich, egal ob du die Antwort weißt oder geraten hast. Die Box ist gesetzt. Das Dokument schaut dich an.
+
+      {{1}}
+> Lesen. Klicken. Weiter.
+> **Checkbox gesetzt. Alles klar?**
+
+### Interaktivität == Code
+
+    --{{0}}--
+Das andere Extrem: Notebooks. Code, der wirklich ausgeführt wird. Mächtig — aber Text und Code sind zwei getrennte Welten auf einer Seite.
+
+``` python
+from microbit import *
+import music
+
+music.play(['f', 'a', 'c', 'e'], wait=False)
+display.scroll("Hello LiaScript ...", wait=False)
+print("OER is not interactive ... why")
+```
+@microbit
+
+    --{{1}}--
+Du liest — Code unterbricht. Du führst aus — du verlierst den Faden. Text erklärt, Code rechnet. Aber sie sprechen nicht miteinander.
+
+      {{1}}
+> **Text ist Text. Code ist Code.**
+> Getrennte Welten — auch wenn sie auf derselben Seite stehen.
+
 
 ## Formeln sind stumm
 
@@ -44,7 +98,7 @@ Schön. Korrekt. Und völlig stumm. Wie viele Bäume brauche ich, um meine Autof
 > Statische Dokumente stellen keine Fragen.
 > **Sie beantworten auch keine.**
 
-## Bret Victor hatte eine Idee
+### Bret Victor hatte eine Idee
 
     --{{0}}--
 2013 hat Bret Victor gezeigt, wie Dokumente aussehen könnten — Dokumente, die mitdenken.
@@ -57,7 +111,7 @@ In LiaScript ist das Wirklichkeit. Heute. Für alle. Open Source. Und die Präse
       {{1}}
 > 🔗 [liascript.github.io](https://liascript.github.io)
 
-## 🌳 Wieviel CO₂ binden Bäume?
+### 🌳 Wieviel CO₂ binden Bäume?
 
     --{{0}}--
 Schaut her — ein reaktives Dokument. Ändert die Anzahl der Bäume. Alles passt sich an.
@@ -148,22 +202,3 @@ let option = {
     --{{1}}--
 Sieht gut aus, oder? Großartig. Ich habe da ein besonders pessimistisches Beispiel ausgesucht. Aber jetzt: Doppelklick auf das Diagramm und schaut euch den Wert in Zeile 12 an.
 
-## Nullius in Verba
-
-    --{{0}}--
-„Nullius in verba" — Nimm niemandes Wort dafür. Das Motto der Royal Society seit 1660. Eine Absage an Autoritätsgläubigkeit in der Wissenschaft.
-
-> *Nullius in verba.*
->
-> -- Royal Society, London, 1660
-
-    --{{1}}--
-LiaScript macht das möglich: Jede Annahme, jeder Algorithmus — direkt im Dokument. Kein Build-Prozess. Keine versteckte Toolchain. Doppelklick. Fertig.
-
-      {{1}}
-**Das ist keine Interaktivität.**
-**Das ist Bildung.**
-
----
-
-🔗 [liascript.github.io](https://liascript.github.io) · [github.com/liascript](https://github.com/liascript)
