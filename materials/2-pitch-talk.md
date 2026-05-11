@@ -51,6 +51,7 @@ Eine Volltextsuche kennt keinen Unterschied. Ein Filterbaum auch nicht. Und ein 
 Und hier ist unsere These: Die Darstellung muss der Intention folgen — nicht umgekehrt.
 
       {{1}}
+<!-- class="translate" translate="yes"-->
 ```
 Natürlichsprachige Anfrage
          ↓
