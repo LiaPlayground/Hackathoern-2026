@@ -26,7 +26,7 @@ Ein 5-Minuten-Impuls über reaktive OER und epistemische Transparenz mit LiaScri
 > und per Doppelklick kann jeder die zugrundeliegenden Annahmen inspizieren und verändern.
 > Das ist keine Spielerei — das ist **Nullius in verba**.
 
-▶ [In LiaScript öffnen](https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreR-Freiberg/Hackathoern-2026/main/materials/1-lightning-talk.md)
+▶ [In LiaScript öffnen](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/Hackathoern-2026/refs/heads/main/materials1-lightning-talk.md)
 
 ---
 
@@ -34,7 +34,7 @@ Ein 5-Minuten-Impuls über reaktive OER und epistemische Transparenz mit LiaScri
 
 Der Hackathon-Pitch zum Projektkonzept — Problemstellung, Ansatz, vier Bausteine und Ziele nach 3 Tagen.
 
-▶ [In LiaScript öffnen](https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreR-Freiberg/Hackathoern-2026/main/materials/2-pitch-talk.md)
+▶ [In LiaScript öffnen](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/Hackathoern-2026/refs/heads/main/materials/2-pitch-talk.md)
 
 📄 [Konzeptpapier (PDF)](assets/pdf/Hackathon_Concept.pdf)
 
