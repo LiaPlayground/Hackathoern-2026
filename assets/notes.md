@@ -63,13 +63,13 @@ https://oersi.org
 
     Maintainer
 
-    Consumer
+Consumer
 
     Bird Persona Liste CCBy (todo)
 
     https://www.daad.de/de/der-daad/querschnittsdimensionen-themen/digitalisierung/bird/personas/
 
-    Intention
+Intention
 
     Ich Content-Creator suche Inhalte für mein Seminar (als Inspiration)
 
@@ -85,7 +85,7 @@ https://oersi.org
 
     Ich will mir einen Überblick verschaffen
 
-    Vorwissen
+Vorwissen
 
     Alter ??? OERSI richtet sich an Hochschulen ... Abhängig vom genutzten Korpus
 
@@ -102,6 +102,7 @@ https://oersi.org
 (Communitybasiert nach Personen/Likes/Event)
 
 Schlagwortsuche -> Katalog Deutsche-Nationalbibliothen -> Synonyme
+
 Zielgruppe
 AMB-Metadatenstandard
 
