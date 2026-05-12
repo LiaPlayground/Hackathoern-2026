@@ -65,8 +65,8 @@ from microbit import *
 import music
 
 music.play(['f', 'a', 'c', 'e'], wait=False)
-display.scroll("Hello LiaScript ...", wait=False)
-print("OER is not interactive ... why")
+display.scroll("Hello HackOERthon 2026", wait=False)
+print("OER is still not interactive ... why")
 ```
 @microbit
 
