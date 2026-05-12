@@ -12,13 +12,7 @@ import:    https://raw.githubusercontent.com/liaTemplates/MicroBit-Simulator/mai
 
 # Nullius in Verba — Traue nicht dem Autoren
 
-      {{1-2}}
-@Wikimedia.embed(https://commons.wikimedia.org/wiki/File:Question_Everything.jpg)
 
-       {{2}}
-> ___„Nullius in verba"___ — Nimm niemandes Wort dafür.
->
-> -- Royal Society, London, 1660
 
 ## Seit der Steinzeit …
 
@@ -201,4 +195,14 @@ let option = {
 
     --{{1}}--
 Sieht gut aus, oder? Großartig. Ich habe da ein besonders pessimistisches Beispiel ausgesucht. Aber jetzt: Doppelklick auf das Diagramm und schaut euch den Wert in Zeile 12 an.
+
+## Nullius in verba 
+
+> ___„Nullius in verba"___ — Nimm niemandes Wort dafür.
+>
+> -- Royal Society, London, 1660
+
+
+      {{1}}
+@Wikimedia.embed(https://commons.wikimedia.org/wiki/File:Question_Everything.jpg)
 
